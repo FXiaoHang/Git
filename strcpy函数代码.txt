@@ -1,10 +1,12 @@
-char * strcpy(char *dst,const char *src) 
+#include <stdio.h>
+char* strcpy(char *strDest, const char* strSrc)
 {
-    assert(dst != NULL && src != NULL);
-
-    char *ret = dst;
-
-    while ((*dst++=*src++)!='\0'); 
-
-    return ret;
+    char *p=NULL;
+    if(strDest == NULL || strSrc == NULL)
+    {
+        return NULL;
+    }
+    p = strDest;
+    while((*strDest++ = *strSrc ++) != '\0');
+    return p;
 }
