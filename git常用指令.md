@@ -169,13 +169,12 @@ man git-<需查询的指令>      #（git后面有“-”）
 20、本地代码上传Github
 
 ```
-1、Gtthub上建立远端仓库，复制下载链接。
-
-2、本地指定目录下，Gitbash粘贴远端仓库下载链接拉取远端仓库代码。
-
-3、复制本地需要提交的代码到远端仓库目录。
-
-3、Git add、commit、push 提交本地代码至Github远端仓库。
+1、git init建立一个本地仓库
+2、将项目所有文件添加到仓库中，再通过git add .   git common -m "descriptions"将文件commit到git仓库
+3、在GitHub上创建一个repository
+4、git remote add origin+SSH地址  #绑定本地文件夹和GitHub仓库
+5、合并代码 git pull --rebase origin master
+6、上传代码 git push -u origin master
 ```
 
 21、设置alias
